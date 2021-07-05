@@ -78,13 +78,19 @@ function createEndsWithFilter(endsWith) {
  * the modify Function, but we need to collect the results into some collection.
  */
 function modifyStrings(strings, modify) {
-    // YOUR CODE BELOW HERE //
+    // YOUR CODE BELOW HERE
     
+    //I: array of strings, function 
+    //O: array of strings modified
+    
+    //create something to hold the modified string
         var moddedStrings = [];
-    
+    //loop over the array of strings
    for (var i = 0; i < strings.length; i++) {
+       //pass each element into modify
    moddedStrings.push(modify(strings[i])); 
    }   
+   //return the new array of modified strings
  return moddedStrings;
     
     
